@@ -1,7 +1,6 @@
 package Formularios;
 
 import Clases.Datos;
-import java.awt.ScrollPane;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -16,6 +15,11 @@ import javax.swing.event.InternalFrameEvent;
 import javax.swing.event.InternalFrameListener;
 import javax.swing.table.DefaultTableModel;
 
+
+/**
+ * Esta es la clase frmUsuario
+ * @author Kelly
+ */
 public class frmUsuarios extends JInternalFrame {
 
     private JLabel lblIDUsuario;
