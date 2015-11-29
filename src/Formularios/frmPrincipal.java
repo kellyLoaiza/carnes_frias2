@@ -2,11 +2,18 @@ package Formularios;
 
 import Clases.Datos;
 import Clases.DesktopConFondo;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
-import javax.swing.*;
-import javax.swing.JPopupMenu.*;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JMenuBar;
+import javax.swing.JFrame;
+import javax.swing.JDesktopPane;
+import javax.swing.JToolBar.Separator;
 
 public class frmPrincipal extends JFrame {
 
@@ -31,6 +38,12 @@ public class frmPrincipal extends JFrame {
     
      //Atributos
     private Datos misDatos;
+    
+    /**
+     * sirve para llevarle un valor a los datos
+     *
+     * @param datos objeto
+     */
 
     public void setDatos(Datos datos) {
         misDatos = datos;
