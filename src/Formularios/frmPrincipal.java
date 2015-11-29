@@ -57,13 +57,17 @@ public class frmPrincipal extends JFrame {
 
     public frmPrincipal() {
 
-        //Propiedades del formulario
+        /*
+         * Propiedades del formulario
+         */
         setTitle("Carnes Frias");
         setLayout(new FlowLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 500);
 
-        //definicion de iconos
+        /**
+         * Definicion de iconos
+         */
         Icon icoArchivo = new ImageIcon(getClass().getResource("/images/archivo.png"));
         Icon icoArchivoClientes = new ImageIcon(getClass().getResource("/images/clientes.png"));
         Icon icoArchivoProductos = new ImageIcon(getClass().getResource("/images/productos.png"));
@@ -78,7 +82,9 @@ public class frmPrincipal extends JFrame {
         Icon icoAyudaAyuda = new ImageIcon(getClass().getResource("/images/ayudaayuda.png"));
         Icon icoAyudaAcercade = new ImageIcon(getClass().getResource("/images/acercade.png"));
 
-        //Creacion de los menus
+        /**
+         * Creacion de los menus
+         */
         mnbMenu = new JMenuBar();
 
         mnuArchivo = new JMenu("Archivo");
@@ -139,7 +145,9 @@ public class frmPrincipal extends JFrame {
         ((DesktopConFondo) dpnEscritorio).setImagen("/images/Fondo.gif");
         setContentPane(dpnEscritorio);
 
-        //Creamos eventos de los Menus
+        /**
+         * Creamos eventos de los Menus
+         */
         mnuArchivoClientes.addActionListener(new ActionListener() {
 
             @Override

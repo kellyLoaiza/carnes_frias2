@@ -6,7 +6,9 @@ public class Datos {
     private Usuario misUsuarios[] = new Usuario[maxUsu];
     private int contUsu = 0;
 
-    //Constructor de la clase datos
+    /**
+     * Constructor de la clase datos
+     */
     public Datos() {
         cargarUsuarios();
         
@@ -28,17 +30,17 @@ public class Datos {
         Usuario miUsuario;
         
         miUsuario = new Usuario("1", "Pepe","Perez", "1234", 0);
-        //Meter este Usuario al arreglo de usuarios
+        //Insertar este Usuario al arreglo de usuarios
         misUsuarios[contUsu] = miUsuario;
         contUsu++;
         
         miUsuario = new Usuario("2", "casimiro","te cojo", "12345", 1);
-        //Meter este Usuario al arreglo de usuarios
+        //Insertar este Usuario al arreglo de usuarios
         misUsuarios[contUsu] = miUsuario;
         contUsu++;
         
         miUsuario = new Usuario("3", "marco","tulio", "123456", 0);
-        //Meter este Usuario al arreglo de usuarios
+        //Insertar este Usuario al arreglo de usuarios
         misUsuarios[contUsu] = miUsuario;
         contUsu++;
         
@@ -48,7 +50,9 @@ public class Datos {
         return contUsu;
     }
     
-    //este metodo nos va a devolver un arreglo de todos los usuarios
+    /*+
+     * Este metodo nos va a devolver un arreglo de todos los usuarios
+     */
     public Usuario[] getUsuarios(){
     
         return misUsuarios;

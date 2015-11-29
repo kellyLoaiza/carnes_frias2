@@ -42,7 +42,9 @@ public class frmLogin extends JFrame {
         misDatos = datos;
     }
 
-    //Creamos Constructor
+    /**
+     * Creamos Constructor
+     */
     public frmLogin() {
 
         //Propiedades
@@ -51,13 +53,15 @@ public class frmLogin extends JFrame {
         setSize(550, 250);
         setLocationRelativeTo(null);
         Icon icoImagen = new ImageIcon(getClass().getResource("/images/cerdologin.gif"));
-        //esto hace que el formulario no se pueda cambiar de tamaño
+        //esto hace que el formulario, no se pueda cambiar de tamaño
         setResizable(false);
 
         //Esto hace que cuando se cierre el formulario se cierre toda la aplicacion
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //Creacion de los ICONOS
+        /**
+         * Creacion de los ICONOS
+         */
         Icon icoAceptar = new ImageIcon(getClass().getResource("/images/login.png"));
         Icon icoCancelar = new ImageIcon(getClass().getResource("/images/cerrarsesion.png"));
         //Creacion de Label y textField
@@ -69,7 +73,9 @@ public class frmLogin extends JFrame {
         btnAceptar = new JButton("Ingresar", icoAceptar);
         btnCancelar = new JButton("Cancelar", icoCancelar);
 
-        //Ponemos los Objetos en el formulario
+        /**
+         * Ponemos los Objetos en el formulario
+         */
         add(lblUsuario);
         add(txtUsuario);
 
@@ -80,7 +86,9 @@ public class frmLogin extends JFrame {
         add(btnCancelar);
         add(lblImagen);
 
-        //Propiedades de los botones
+        /**
+         * Propiedades de los botones
+         */
         btnAceptar.setHorizontalTextPosition(SwingConstants.CENTER);
         btnAceptar.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnAceptar.setToolTipText("Iniciar Sesion");
@@ -100,7 +108,9 @@ public class frmLogin extends JFrame {
         btnAceptar.reshape(40, 110, 100, 50);
         btnCancelar.reshape(160, 110, 100, 50);
 
-        //Creamos eventos de los BOTONES
+        /**
+         * Creamos eventos de los BOTONES
+         */
         btnAceptar.addActionListener(new ActionListener() {
 
             @Override

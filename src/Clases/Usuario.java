@@ -8,7 +8,9 @@ public class Usuario {
     private String contrasena;
     private int perfil;
 
-    //Creamos Constructor
+    /**
+     * Creamos Constructor
+     */
     public Usuario(String idUsuario, String nombres, String apellidos,
             String contrasena, int perfil) {
 
