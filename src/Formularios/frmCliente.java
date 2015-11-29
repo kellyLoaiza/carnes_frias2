@@ -54,23 +54,30 @@ public class frmCliente {
 
     //Atributos
     private Datos misDatos;
+    
+     /**
+     * sirve para llevarle un valor a los datos
+     *
+     * @param datos objeto
 
     public void setDatos(Datos datos) {
         misDatos = datos;
     }
 
     /**
-     * /Creamos el constructor
+     * Creamos el constructor
      */
     public frmCliente() {
-   //Definimos propiedades del formulario
-
+   /**
+   * Definimos propiedades del formulario
+   */
+   
         //se puede cerrar el formulario
         setClosable(true);
 
         //se puede minimizar el formulario
         setIconifiable(true);
-
+        
         //No se puede cambiar de tamaño
         setResizable(false);
 
@@ -80,7 +87,9 @@ public class frmCliente {
 
         Icon icoImagen = new ImageIcon(getClass().getResource("/images/usuario.gif"));
 
-        //Creamos Componentes
+        /**
+         * Creamos Componentes
+         */
         lblIDUsuario = new JLabel("Id Usuario: *");
         txtIDUsuario = new JTextField(10);
 
@@ -116,7 +125,9 @@ public class frmCliente {
 
         scrollTabla.setViewportView(tabla);
 
-        //Adicion de los componentes
+        /**
+         * Adicion de los componentes
+         */
         add(lblIDUsuario);
         add(txtIDUsuario);
         add(lblPerfil);
@@ -131,7 +142,9 @@ public class frmCliente {
         add(lblMensaje);
         add(lblImagen);
 
-        //Colocamos los componentes en el formulario
+        /**
+         *Pusimos los componentes en el formulario
+         */
         lblImagen.reshape(550, 30, 400, 400);
         
         lblIDUsuario.reshape(20, 20, 110, 20);
@@ -163,7 +176,9 @@ public class frmCliente {
 
         scrollTabla.reshape(20, 215, 540, 460);
 
-        //Eventos del Formulario
+        /*
+         * Eventos del Formulario
+         */
         addInternalFrameListener(new InternalFrameListener() {
 
             @Override

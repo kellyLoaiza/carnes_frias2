@@ -13,6 +13,11 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
+    
+/**
+ *Clase frmLogin
+ * @author Kelly
+ */
 public class frmLogin extends JFrame {
 
     //Componentes

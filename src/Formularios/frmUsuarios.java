@@ -49,7 +49,6 @@ public class frmUsuarios extends JInternalFrame {
     private DefaultTableModel miTabla;
     private JScrollPane scrollTabla;
 
-    //Arreglo del comboBox
     private String perfil[] = {"Administrador", "Empleado"};
 
     //Atributos
@@ -58,13 +57,13 @@ public class frmUsuarios extends JInternalFrame {
     public void setDatos(Datos datos) {
         misDatos = datos;
     }
-
-    //Creamos el constructor
     /**
-     * 
+     * Creamos el constructor
      */
     public frmUsuarios() {
-   //Definimos propiedades del formulario
+    /**
+   * Definimos propiedades del formulario
+   */
 
         //se puede cerrar el formulario
         setClosable(true);
@@ -81,7 +80,9 @@ public class frmUsuarios extends JInternalFrame {
 
         Icon icoImagen = new ImageIcon(getClass().getResource("/images/usuario.gif"));
 
-        //Creamos Componentes
+        /**
+         * Creamos Componentes
+         */
         lblIDUsuario = new JLabel("Id Usuario: *");
         txtIDUsuario = new JTextField(10);
 
@@ -117,7 +118,9 @@ public class frmUsuarios extends JInternalFrame {
 
         scrollTabla.setViewportView(tabla);
 
-        //Adicion de los componentes
+        /**
+         * Adicion de los componentes
+         */
         add(lblIDUsuario);
         add(txtIDUsuario);
         add(lblPerfil);
@@ -139,7 +142,9 @@ public class frmUsuarios extends JInternalFrame {
         add(scrollTabla);
         add(lblImagen);
 
-        //Colocamos los componentes en el formulario
+        /**
+         * Colocamos los componentes en el formulario
+         */
         lblImagen.reshape(550, 30, 400, 400);
         
         lblIDUsuario.reshape(20, 20, 110, 20);
@@ -171,7 +176,9 @@ public class frmUsuarios extends JInternalFrame {
 
         scrollTabla.reshape(20, 215, 540, 460);
 
-        //Eventos del Formulario
+        /**
+         * Eventos del Formulario
+         */
         addInternalFrameListener(new InternalFrameListener() {
 
             @Override
