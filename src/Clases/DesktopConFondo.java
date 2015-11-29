@@ -1,7 +1,9 @@
 package Clases;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JDesktopPane;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+import java.awt.Graphics;
 
 public class DesktopConFondo extends JDesktopPane {
     

@@ -2,7 +2,7 @@ package Clases;
 
 public class Datos {
 
-    private int maxUsu = 100;
+    private int maxUsu = 50;
     private Usuario misUsuarios[] = new Usuario[maxUsu];
     private int contUsu = 0;
 
@@ -16,7 +16,7 @@ public class Datos {
 
     public boolean ValidarUsuario(String usuario, String contrasena) {
 
-        if (usuario.equalsIgnoreCase("Alexander") && contrasena.equals("123")) {
+        if (usuario.equalsIgnoreCase("alex") && contrasena.equals("123")) {
             return true;
         } else {
             return false;

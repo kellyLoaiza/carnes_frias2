@@ -26,7 +26,13 @@ public class frmLogin extends JFrame {
 
     //Atributos
     private Datos misDatos;
-
+    
+    /**
+     * sirve para llevarle un valor a los datos
+     *
+     * @param datos objeto
+     */
+   
     public void setDatos(Datos datos) {
         misDatos = datos;
     }
@@ -38,6 +44,7 @@ public class frmLogin extends JFrame {
         setTitle("Ingreso al Sistema");
         setLayout(null);
         setSize(550, 250);
+        setLocationRelativeTo(null);
         Icon icoImagen = new ImageIcon(getClass().getResource("/images/cerdologin.gif"));
         //esto hace que el formulario no se pueda cambiar de tamaño
         setResizable(false);
@@ -48,7 +55,6 @@ public class frmLogin extends JFrame {
         //Creacion de los ICONOS
         Icon icoAceptar = new ImageIcon(getClass().getResource("/images/login.png"));
         Icon icoCancelar = new ImageIcon(getClass().getResource("/images/cerrarsesion.png"));
-
         //Creacion de Label y textField
         lblUsuario = new JLabel("Usuario:");
         txtUsuario = new JTextField(10);
@@ -130,11 +136,11 @@ public class frmLogin extends JFrame {
         btnCancelar.addActionListener(new ActionListener() {
 
             @Override
-            public void actionPerformed(ActionEvent ae) {
-                btnCancelarActionPerformed(ae);
+            public void actionPerformed(ActionEvent e) {
+                btnCancelarActionPerformed(e);
             }
 
-            private void btnCancelarActionPerformed(ActionEvent ae) {
+            private void btnCancelarActionPerformed(ActionEvent e) {
 
                 System.exit(0);
             }

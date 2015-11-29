@@ -15,6 +15,11 @@ import javax.swing.JFrame;
 import javax.swing.JDesktopPane;
 import javax.swing.JToolBar.Separator;
 
+/**
+ *Clase frmPrincipal
+ * @author Kelly 
+ */
+
 public class frmPrincipal extends JFrame {
 
     //Objetos

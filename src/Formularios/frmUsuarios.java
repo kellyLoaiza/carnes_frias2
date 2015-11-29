@@ -60,6 +60,9 @@ public class frmUsuarios extends JInternalFrame {
     }
 
     //Creamos el constructor
+    /**
+     * 
+     */
     public frmUsuarios() {
    //Definimos propiedades del formulario
 
